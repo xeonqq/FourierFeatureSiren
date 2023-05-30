@@ -3,7 +3,7 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a><br>
 
-## Fourier Feature Network(FFN) VS Siren, can we combine them?
+## Fourier Feature Network(FFN) VS Siren. Moreover, can we combine them?
 
 This is an experiement to compare the performace of [Fourier Feature Network(FFN)](https://bmild.github.io/fourfeat/) and Siren MLP, proposed in work [Implicit Neural Activations with Periodic Activation Functions](https://vsitzmann.github.io/siren). In terms of accuracy in image fitting. 
 
