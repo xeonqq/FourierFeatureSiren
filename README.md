@@ -30,8 +30,13 @@ https://github.com/xeonqq/FourierFeatureSiren/assets/4160429/2efb4c64-532f-4245-
 |**FFSiren**  | **51.83**  |**0.0000262**   | 
 * PSNR: higher the better; MSE: lower the better 
 
-**Siren**: Converges very fast during training, it has smooth output as well as its gradient and laplacian. However, the output image is not sharp enough. (high frequency not recovered)
+Peak signal-to-noise ratio          |  Mean squared error
+:-------------------------:|:-------------------------:
+![](images/psnr.png)  |  ![](images/mse_loss.png)
 
-**Fourier Feature Network (FFN)**: Converges the slowest during training, but has higher PSNR in the end than Siren. The image is sharper than Siren, but it also induce significantly more noise in the final image.
 
-**Fourier Feature Siren (FFSiren)**: Converges as fast as Siren during training, it has the highest PSNR, and has much less noise than FFN.  
+|   |Pros  | Cons  |  
+|---|---|---|
+|**Siren**   | Converges very fast during training, it has smooth output as well as its gradient and laplacian |The output image is not sharp enough, high frequency signals are not recovered)  | 
+|**Fourier Feature Network (FFN)**  | Has higher PSNR in the end than Siren, The image is sharper than Siren  |Converges the slowest during training, it also induce significantly more noise in the final image|  
+|**Fourier Feature Siren (FFSiren)**  |Converges as fast as Siren during training, it has the highest PSNR, and has much less noise than FFN| Training loss has slight sparks which seems big in PSNR plot (due to log operation)  | 
