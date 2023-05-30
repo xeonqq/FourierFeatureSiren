@@ -22,6 +22,8 @@ For fair comparision. All three models are having ~0.263 Million parameters, tra
 
 https://github.com/xeonqq/FourierFeatureSiren/assets/4160429/2efb4c64-532f-4245-a14e-5a08d16c6a56
 
+*Watch on full screen to see the difference clearly.*
+
 ## Results
 |   |PSNR  | MSE  |  
 |---|---|---|
