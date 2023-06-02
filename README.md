@@ -9,9 +9,9 @@ This is an experiement to compare the performace of [Fourier Feature Network(FFN
 
 In the end, a combined version **FourierFeatureSiren (FFSiren)** is presented, which outperforms both models.
 
-* The Siren implementation is a copy-paste from the original implementation from the author
+* The Siren implementation is a copy-paste from the original implementation from the author.
 
-* FFN implementation is a pytorch port from the original jax implemenation from the author. (But removing the last sigmoid layer from the original network) 
+* FFN implementation is a pytorch port from the original jax implemenation from the author.
 
 * FFSiren is simply a combined version of the two. It takes the input embbeding using fourier feature mapping, and feed it into a Siren network.
 
@@ -25,7 +25,7 @@ For fair comparision. All three models are having ~0.263 Million parameters, tra
 
 ## Results
 |   |PSNR  | Pixel MSE  |  Gradient MSE |
-|---|---|---|
+|---|---|---|---|
 |Siren   | 36.80  |0.0008   |  33.28 |
 |FFN   | 38.43  | 0.00057  |  48.12 |
 |**FFSiren**  | **51.83**  |**0.0000262**   | **18.12** |
