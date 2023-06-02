@@ -24,11 +24,11 @@ For fair comparision. All three models are having ~0.263 Million parameters, tra
 <img src="images/comp.png"  width="150%" height="150%">
 
 ## Results
-|   |PSNR  | MSE  |  
+|   |PSNR  | Pixel MSE  |  Gradient MSE |
 |---|---|---|
-|Siren   | 36.80  |0.0008   | 
-|FFN   | 38.19  | 0.0006  |  
-|**FFSiren**  | **51.83**  |**0.0000262**   | 
+|Siren   | 36.80  |0.0008   |  33.28 |
+|FFN   | 38.43  | 0.00057  |  48.12 |
+|**FFSiren**  | **51.83**  |**0.0000262**   | **18.12** |
 * PSNR: higher the better; MSE: lower the better 
 
 Peak signal-to-noise ratio          |  Mean squared error
